@@ -9,17 +9,17 @@ public class studentGradeCalculator
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Name of the Student:");
 		String name =sc.nextLine();
-		System.out.println("Roll number:");
+		System.out.println(" Enter the Roll number:");
 		String Roll=sc.nextLine();
-		System.out.println("enter the number of subjects marks :");
+		System.out.println("Enter the number of subjects :");
 		int n=sc.nextInt();
-		System.out.println("enter the "+n +"Subject marks in range(1-100)");
+		System.out.println("enter the "+ n +"Subject marks in range(1-100)");
 	    for(int i=0;i<n;i++)
 	    {
 	    	int marks=sc.nextInt();
 	    	if(marks > 100)
 	    	{
-	    		System.out.println("enter the value in range(1-100)o");
+	    		System.out.println("enter the value in range(1-100) only");
 	    				break;
 	    	}
 	    	sum=sum+marks;
@@ -56,8 +56,9 @@ public class studentGradeCalculator
 	    else 
 	    {
 	    	System.out.println("Failed");
-	    }
+	        System.out.println("NEED TO DO IMPROVE UR SELF!!");
+	     }
 	
-	System.out.println("Total marks :" + sum +" Average :"+ Average);
+	System.out.println("Total marks :" + sum +" Average:"+ Average);
     }
 }
